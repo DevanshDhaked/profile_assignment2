@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Devansh Singh</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <!-- Favicons removed to use browser default -->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Quicksand:wght@300;400;500;600;700&family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Square grid layout for gallery and portfolio */
+    .gallery .gallery-item,
+    .portfolio .portfolio-content {
+      overflow: hidden;
+      position: relative;
+      padding-bottom: 100%; /* Square aspect ratio */
+    }
+    
+    /* Wide gallery item - 2 squares wide (gallery only) */
+    .gallery .gallery-item.gallery-wide {
+      padding-bottom: 50%; /* Rectangle aspect ratio (2:1) */
+    }
+    
+    .gallery .gallery-item a,
+    .portfolio .portfolio-content a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .gallery .gallery-item img,
+    .portfolio .portfolio-content > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.3s ease;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    .gallery .gallery-item:hover img,
+    .portfolio .portfolio-content:hover img {
+      transform: scale(1.1);
+    }
+    
+    .portfolio .portfolio-info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Devansh</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          
+          <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/mountains.jpg" alt="" data-aos="fade-in">
+
+      <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>Devansh Singh</h2>
+        <p>I'M A M.TECH STUDENT AT IIIT HYDERABAD</p>
+        <a href="#about" class="btn-scroll" title="Scroll Down"><i class="bi bi-chevron-down"></i></a>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="description-title">About me</span>
+        <h2>About Me</h2>
+        <p>Just a chill guy who doesnt like to study and does everything else :P</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Designer</h2>
+            <p class="fst-italic py-3">
+              I am also the official video editor for PDM branch
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>12 January 2003</span></li>
+                  <li><i class="bi bi-chevron-right"></i><strong>Website:</strong><a href="https://www.behance.net/gallery/222413185/My-Portfolio"> <span>Behance portfolio</span></a> </li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 7354753550</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Hyderabad, India</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Masters</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>devanshdhaked@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>busy</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              no idea what to write here so i will just write this
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="description-title">Muy Resume</span>
+        <h2>My Resume</h2>
+        <p>Just to let you know about my past education and experiences</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Summary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Devansh Singh</h4>
+              <p><em>Just a fresher who directly joined M.teh in Product Design and Management in IIIT Hyderabad</em></p>
+              <ul>
+                <li>Gwalior, Madhya Pradesh, India</li>
+                <li>+91 7354753550</li>
+                <li>devanshdhaked@gmail.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>10th Class</h4>
+              <h5>2019 - 2020</h5>
+              <p><em>St. Paul's School, Morar, Gwalior </em></p>
+              <p>Completed my 10th class here with 88%</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>12th Class</h4>
+              <h5>2020-2021</h5>
+              <p><em>Sanskar Public School, Gwalior</em></p>
+              <p>Completed my 12th in PCM with 91%</p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">College</h3>
+            <div class="resume-item">
+              <h4>B.tech in Computer Science and Design (cgpa : 7.71)<br></h4>
+              <h5>2021-2025</h5>
+              <p><em>Madhav Institute of Technology and science, Gwalior, M.P., India</em></p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>M.tech in Product Design and Management</h4>
+              <h5>2025-present</h5>
+              <p><em>International Institute of Information Technology, Hyderabad</em></p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="description-title">Portfolio</span>
+        <h2>Portfolio</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container-fluid">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="row g-0 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/IMG_0208.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <a href="assets/img/portfolio/IMG_0208.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/IMG_0798.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <a href="assets/img/portfolio/IMG_0798.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/IMG_0810 (Large).jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <a href="assets/img/portfolio/IMG_0810 (Large).jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/IMG_0948.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <a href="assets/img/portfolio/IMG_0948.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/IMG_0956.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <a href="assets/img/portfolio/IMG_0956.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/IMG_1016.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <a href="assets/img/portfolio/IMG_1016.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/IMG_1039.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <a href="assets/img/portfolio/IMG_1039.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/IMG_2622.JPG" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <a href="assets/img/portfolio/IMG_2622.JPG" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/IMG_3147.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <a href="assets/img/portfolio/IMG_3147.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/IMG_4860.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <a href="assets/img/portfolio/IMG_4860.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/IMG_5188.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <a href="assets/img/portfolio/IMG_5188.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/IMG_5494.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <a href="assets/img/portfolio/IMG_5494.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/IMG_6500.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <a href="assets/img/portfolio/IMG_6500.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/IMG_6887.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <a href="assets/img/portfolio/IMG_6887.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/IMG_8102.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <a href="assets/img/portfolio/IMG_8102.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/IMG_8105.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <a href="assets/img/portfolio/IMG_8105.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/pastel green pen stand.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <a href="assets/img/portfolio/pastel green pen stand.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/pen 2.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <a href="assets/img/portfolio/pen 2.png" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/red pen stand.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <a href="assets/img/portfolio/red pen stand.png" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="description-title">Gallery</span>
+        <h2>Gallery</h2>
+        
+      </div><!-- End Section Title -->
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/DSC00522.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/DSC00522.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/DSC00598.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/DSC00598.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-8">
+            <div class="gallery-item gallery-wide">
+              <a href="assets/img/gallery/DSC00602.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/DSC00602.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/DSC00628.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/DSC00628.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/DSC00636.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/DSC00636.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/DSC00642.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/DSC00642.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/DSC00725-Enhanced-NR.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/DSC00725-Enhanced-NR.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/DSC02305.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/DSC02305.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-8">
+            <div class="gallery-item gallery-wide">
+              <a href="assets/img/gallery/DSC02400.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/DSC02400.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/DSC02424.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/DSC02424.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/DSC02457.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/DSC02457.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/IMG_0420.JPG" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/IMG_0420.JPG" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/IMG_2445.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/IMG_2445.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-8">
+            <div class="gallery-item gallery-wide">
+              <a href="assets/img/gallery/IMG_2749.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/IMG_2749.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/IMG_2753.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/IMG_2753.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/IMG_2764.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/IMG_2764.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/IMG_2936.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/IMG_2936.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/IMG_3052.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/IMG_3052.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/IMG_6521.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/IMG_6521.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-8">
+            <div class="gallery-item gallery-wide">
+              <a href="assets/img/gallery/IMG_6574-2.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/IMG_6574-2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/IMG_6583-2.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/IMG_6583-2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/IMG_6898.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/IMG_6898.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/IMG_6938.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/IMG_6938.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/mountains-3.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/mountains-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/spider.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/spider.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/Untitled-1.png" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/Untitled-1.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative dark-background">
+    <div class="container">
+      <h3 class="sitename">thanks for visiting :)</h3>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="../Q_6/assets/js/tracker.js"></script>
+
+</body>
+
+</html>
